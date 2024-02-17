@@ -1,190 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portifolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/ff570b9956.js" crossorigin="anonymous"></script>
-    
+
 </head>
+
 <body>
-   <div id="header">
-    <div class="container">
-        <nav>
-            <img src="pictures/Logoo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="header-text">
-            <p>SOFTWARE ENGINEER</p>
-            <h1>Hi, I'm <span>Lydia </span><br>Mwangi a passionate engineer</h1>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="pictures/Logoo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>SOFTWARE ENGINEER</p>
+                <h1>Hi, I'm <span>Lydia </span><br>Mwangi a passionate engineer</h1>
+            </div>
+        </div>
+
+    </div>
+    <!----------------------about-------------------->
+    <div id="about">
+        <div class="contaner">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="pictures/lady.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Greetings! I'm Lydia, a passionate software engineer specializing in mobile app development.<br>
+                        With additional expertise in website development and UI/UX design,<br> I bring innovation to
+                        every project. I'm committed to crafting seamless user experiences<br>
+                        and solving complex challenges through clean code and intuitive design.<br>
+                        Let's explore the possibilities of technology together!
+
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024 - Current</span><br>Mobile App Development</li>
+                            <li><span>2022-2023</span><br>UI/UX Desiner</li>
+                            <li><span>2023</span><br>Sales Manager</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-current</span><br>Software Engineering at MUT</li>
+                            <li><span>2022</span><br>Web App Development at W3school</li>
+                            <li><span>2023</span><br>Building Android/ios apps at Alison</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-   </div>
-<!----------------------about-------------------->
-   <div id="about">
-    <div class="contaner">
-        <div class="row">
-            <div class="about-col-1">
-                <img src="pictures/lady.jpg" >
-            </div>
-            <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>Greetings! I'm Lydia, a passionate software engineer specializing in mobile app development.<br>
-                     With additional expertise in website development and UI/UX design,<br> I bring innovation to every project. I'm committed to crafting seamless user experiences<br>
-                      and solving complex challenges through clean code and intuitive design.<br>
-                       Let's explore the possibilities of technology together!
-
-                </p>
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick="opentab('experience')">Experience</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
+    <!--------------------------------services-------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design and Development</h2>
+                    <p>Step into the digital realm with our comprehensive web design and development services. I don't
+                        just
+                        create websites; I craft digital experiences that captivate and resonate with your audience.
+                        From
+                        the initial concept to the final launch, my team of skilled designers and developers
+                        collaborates
+                        to deliver visually stunning and functionally robust websites. Whether you're looking for a
+                        sleek
+                        and modern portfolio, a dynamic e-commerce platform, or a custom web application, we bring
+                        creativity
+                        and technical expertise to every project. Let me transform your online presence, blending
+                        aesthetics
+                        with seamless functionality for a website that leaves a lasting impression.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents active-tab" id="skills">
-                    <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Web Development</span><br>Web App Development</li>
-                        <li><span>App Development</span><br>Building Android/ios apps</li>
-                    </ul>
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Welcome to a world where design meets purpose. My UI/UX design services go beyond aesthetics;
+                        we're here to craft meaningful and impactful digital experiences. Through a deep understanding
+                        of user behavior and cutting-edge design principles, we transform ideas into visually stunning
+                        interfaces that not only catch the eye but elevate user engagement. From wireframes to
+                        pixel-perfect
+                        mockups, we meticulously shape every detail to ensure seamless navigation and user delight.
+                        Let's collaborate to bring your vision to life, where user experience takes center stage,
+                        and design tells a compelling story.</p>
+                    <a href="#">Learn More</a>
                 </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>2024 - Current</span><br>Mobile App Development</li>
-                        <li><span>2022-2023</span><br>UI/UX Desiner</li>
-                        <li><span>2023</span><br>Sales Manager</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2021-current</span><br>Software Engineering at MUT</li>
-                        <li><span>2022</span><br>Web App Development at W3school</li>
-                        <li><span>2023</span><br>Building Android/ios apps at Alison</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-   </div>
-
-   <!--------------------------------services-------------------->
-   <div id="services">
-    <div class="container">
-        <h1 class="sub-title">My Services</h1>
-        <div class="services-list">
-            <div>
-                <i class="fa-solid fa-code"></i>
-                <h2>Web Design and Development</h2>
-                <p>Step into the digital realm with our comprehensive web design and development services. I don't just
-                     create websites; I craft digital experiences that captivate and resonate with your audience. From
-                      the initial concept to the final launch, my team of skilled designers and developers collaborates
-                       to deliver visually stunning and functionally robust websites. Whether you're looking for a sleek
-                        and modern portfolio, a dynamic e-commerce platform, or a custom web application, we bring creativity
-                         and technical expertise to every project. Let me transform your online presence, blending aesthetics
-                          with seamless functionality for a website that leaves a lasting impression.</p>
-                     <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-sharp fa-solid fa-crop"></i>
-                <h2>UI/UX Design</h2>
-                <p>Welcome to a world where design meets purpose. My UI/UX design services go beyond aesthetics;
-                     we're here to craft meaningful and impactful digital experiences. Through a deep understanding 
-                     of user behavior and cutting-edge design principles, we transform ideas into visually stunning 
-                     interfaces that not only catch the eye but elevate user engagement. From wireframes to pixel-perfect
-                      mockups, we meticulously shape every detail to ensure seamless navigation and user delight. 
-                    Let's collaborate to bring your vision to life, where user experience takes center stage,
-                     and design tells a compelling story.</p>
-                     <a href="#">Learn More</a>
-            </div>
-            <div>
-                <i class="fa-brands fa-app-store"></i>
-                <h2>App Development</h2>
-                <p>Embark on a journey of innovation with our bespoke app development services. Whether you're envisioning
-                     a cutting-edge mobile application for iOS or Android, we specialize in turning your ideas into reality.
-                      From concept to deployment, our seasoned developers leverage the latest technologies to create robust
-                       and user-friendly applications that resonate with your audience. We prioritize not just functionality
-                        but also a seamless and enjoyable user experience. Join me in pushing the boundaries of mobile technology, 
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>Embark on a journey of innovation with our bespoke app development services. Whether you're
+                        envisioning
+                        a cutting-edge mobile application for iOS or Android, we specialize in turning your ideas into
+                        reality.
+                        From concept to deployment, our seasoned developers leverage the latest technologies to create
+                        robust
+                        and user-friendly applications that resonate with your audience. We prioritize not just
+                        functionality
+                        but also a seamless and enjoyable user experience. Join me in pushing the boundaries of mobile
+                        technology,
                         and let me build an app that stands out in today's competitive digital landscape.
 
-                </p>
-                     <a href="#">Learn More</a>
+                    </p>
+                    <a href="#">Learn More</a>
+                </div>
+
             </div>
 
         </div>
-
     </div>
-   </div>
-<!----------------------------------portifolio------------------->
-   <div id="portfolio">
-    <div class="container">
-        <h1 class="sub-title">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="pictures/clement-helardot-95YRwf6CNw8-unsplash.jpg" >
-                <div class="layer">
-                    <h3>Chat App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from playstore </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+    <!----------------------------------portifolio------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="pictures/clement-helardot-95YRwf6CNw8-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Chat App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pictures/domenico-loia-hGV2TfOh0ns-unsplash.jpg">
+                    <div class="layer">
+                        <h3>Hama App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="pictures/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg">
+                    <div class="layer">
+                        <h3>School Website</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from playstore </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
                 </div>
             </div>
-            <div class="work">
-                <img src="pictures/domenico-loia-hGV2TfOh0ns-unsplash.jpg" >
-                <div class="layer">
-                    <h3>Hama App</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from playstore </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="pictures/ferenc-almasi-eYpcLDXHVb0-unsplash.jpg" >
-                <div class="layer">
-                    <h3>School Website</h3>
-                    <p>The app connects you to the talented people around the world.
-                        Download it from playstore </p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
+            <a href="#" class="btn">See more</a>
         </div>
-        <a href="#" class="btn">See more</a>
     </div>
-   </div>
-<!---------------------contact----------------->
+    <!---------------------contact----------------->
 
 
 
 
-<script>
-var tablinks = document.getElementsByClassName("tab-links");
-var tabcontents = document.getElementsByClassName("tab-contents");
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
 
-function opentab(tabname, event){
-    for(let tablink of tablinks){
-        tablink.classList.remove("active-link");
-    }
-    for(let tabcontent of tabcontents){
-        tabcontent.classList.remove("active-tab");
-    }
-    document.getElementById(tabname).classList.add("active-tab");
-    document.getElementById(tabname + "-link").classList.add("active-link");
+        function opentab(tabname, event) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            document.getElementById(tabname).classList.add("active-tab");
+            document.getElementById(tabname + "-link").classList.add("active-link");
 
-    event.currentTarget.classList.add("active-link");
-}
+            event.currentTarget.classList.add("active-link");
+        }
 
-for(let tablink of tablinks){
-    tablink.addEventListener("click", function(event){
-        opentab(this.innerText.toLowerCase(), event);
-    });
-}
+        for (let tablink of tablinks) {
+            tablink.addEventListener("click", function (event) {
+                opentab(this.innerText.toLowerCase(), event);
+            });
+        }
 
-</script>
+    </script>
 </body>
+
 </html>
