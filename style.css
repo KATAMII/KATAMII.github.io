@@ -4,6 +4,9 @@
     font-family: 'poppins',sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     background: #080808;
     color: #fff;
@@ -86,11 +89,15 @@ nav ul li a:hover::after{
 .about-col-2{
     flex-basis: 60%;
 }
+.about-col-2 p{
+    color: #fff;
+}
 .sub-title{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
 }
+
 .tab-titles{
     display: flex;
     margin: 20px 0 40px;
@@ -314,23 +321,24 @@ form .btn2{
 .copyright i{
     color: #ff004f;
 }
-/******************css for small screens---------------*/
-nav.fas{
+nav .fa-solid  {
     display: none;
 }
+/******************css for small screens---------------*/
+
 @media only screen and (max-width:600px){
     #header{
         background-image: url(pictures/bg.jpg);
     }
     .header-text{
-        margin-top: 100%;
+        margin-top: 60%;
         font-size: 16px;
     }
     .header-text h1{
         font-size: 30px;
     }
     
-    nav.fas{
+    nav .fa-solid {
         display: block;
         font-size: 25px;
     }
@@ -338,20 +346,48 @@ nav.fas{
         background: #ff004f;
         position: fixed;
         top: 0;
-        right: -200px;
+        right:-200px;
         width: 200px;
         height: 100vh;
         padding-top: 50px;
         z-index: 2;
+        transition: right 0.5s;
     }
     nav ul li{
         display:block;
         margin: 25px;
     }
-    nav ul  .fas{
+    nav ul .fa-solid {
         position: absolute;
         top: 25px;
         left: 25px;
         cursor: pointer;
     }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1,.about-col-2{
+        flex-basis: 100%;
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+    .about-col-2{
+        font-size: 14px;
+        margin-left: 30px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+    
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
 }
